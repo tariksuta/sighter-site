@@ -1,0 +1,28 @@
+/* CSS IMPORTS */
+@import "main-lg.css";
+@import "main-md.css";
+@import "main-sm.css";
+@import "main-xs.css";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+}
+
+/* GLOBAL */
+.float-clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* CONTENT */
+#main-logo{
+    width: 150px;
+}
