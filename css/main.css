@@ -4,6 +4,14 @@
 @import "main-sm.css";
 @import "main-xs.css";
 
+
+
+/*
+    FONT USAGE
+    font-family: 'Staatliches', cursive;
+    font-family: 'Montserrat', sans-serif;
+*/
+
 *{
     box-sizing: border-box;
     padding: 0;
