@@ -1,7 +1,138 @@
-/* UREĐAJI ISPOD 600px */
-
-@media only screen and (max-width: 600px){
-    body{
-        background-color: blue;
+    /* UREĐAJI ISPOD 600px */
+    
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: blue;
+        }
+        /* GLOBAL */
+        .float-clear::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .line::after {
+            content: '';
+            display: block;
+            width: 150px;
+            height: 2px;
+            background-color: rgb(0, 123, 255);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            font-family: 'Staatliches', cursive;
+        }
+        p {
+            font-size: 18px;
+        }
+        #main-container {
+            padding: 0px;
+        }
+        #upper-content {
+            margin-bottom: 30px;
+        }
+        #naslov {
+            padding: 10px 150px;
+        }
+        .artikal {
+            
+            height: 399px;
+            background-color: red;
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        .active {
+            
+            border: 2px solid black;
+        }
+        #artikal-srednji {
+            width: calc(390px - 30px);
+            height: 399px;
+            margin: 10px 15px;
+        }
+        #artikal-l {
+            width: calc(50px - 20px);
+            height: 370px;
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+        #artikal-d {
+            width: calc(50px - 10px);
+            height: 370px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #dugme {
+            border: 2px solid rgb(77, 38, 38);
+            padding: 5px;
+            margin-top: 20px;
+        }
+        .zaSlike {
+            height: 30px;
+            text-align: center;
+            padding: 10px 0;
+            display: block;
+        }
+        .zaSlike span {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .all-text {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            transition: .5s;
+            opacity: 0.7;
+        }
+        .all-text {
+            color: white;
+        }
+        .text-naslov {
+            padding: 10px 250px 10px 10px;
+        }
+        .count {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+        }
+        .text-content {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: left;
+        }
+        .footer-content {
+            margin-top: 70px;
+        }
+        .footer-left {
+            float: left;
+            width: 50%;
+        }
+        .footer-right {
+            float: left;
+            width: 50%;
+            color: rgb(201, 137, 19);
+            font-size: 20px;
+            padding-left: 80px;
+        }
+        .artikal:hover .all-text {
+            left: 0%;
+        }
     }
-}
