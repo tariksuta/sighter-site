@@ -8,7 +8,16 @@
     <title>Sighter</title>
 
     <!-- CSS IMPORTS -->
+
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main-xs.css" />
+    <link rel="stylesheet" href="../css/main-sm.css" />
+    <link rel="stylesheet" href="../css/main-md.css" />
+    <link rel="stylesheet" href="../css/main-lg.css" />
+
+
+
+
 
     <!-- FONT IMPORTS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
@@ -17,9 +26,53 @@
 </head>
 
 <body>
-    <img id="main-logo" src="../assets/images/sighter_logo.png" alt="Sighter logo">
-    <h1 id="message"></h1>
+    <div id="main-container">
+        <div id="upper-content">
+            <div id="naslov">
+                <h1 class="line">DO YOU WONT TO TRAVEL WITH SIGHTER</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima debitis necessitatibus possimus et voluptates praesentium ab, ratione veniam ipsa tempora dolor quod ullam. Ea et deserunt adipisci, aperiam assumenda incidunt!</p>
+        </div>
+        <div id="down-content" class="float-clear">
+            <div class="artikal" id="artikal-l" onclick="dodjeliSliku('slika1',1)">
+                <div class="all-text" id="text1">
+
+                    <p></p>
+                </div>
+                <img src="../img/david-marcu-125458-unsplash.png" id="slika1">
+            </div>
+            <div class="artikal" id="artikal-srednji" onclick="dodjeliSliku('slika2',2)">
+                <div class="all-text">
+                    <div class="text-naslov">
+                        <h1 style="font-size: 50px">KUBA TRIP</h1>
+                        <p class="count">9 DAYS</p>
+                    </div>
+                    <div class="text-content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab autem nostrum alias omnis nesciunt voluptates dignissimos molestias quae, mollitia quaerat quas. Magni accusamus doloremque perspiciatis quod natus eaque nam maiores.
+                    </div>
+                    <div class="footer-content" class="float-clear">
+                        <div class="footer-left">BY LASTA TRAVEL</div>
+                        <div class="footer-right"> 1260$</div>
+                    </div>
+                </div>
+
+                <img src="../img/simon-matzinger-294978-unsplash.png" id="glavna">
+            </div>
+            <div class="artikal" id="artikal-d" onclick="dodjeliSliku('slika3',3)">
+                <div class="all-text"></div>
+                <img src="../img/maid-milinkic-663024-unsplash.png" id="slika3">
+            </div>
+
+        </div>
+        <div class="zaSlike">
+            <span class="krug"></span>
+            <span class="krug"></span>
+            <span class="krug"></span>
+        </div>
+        <button id="dugme">SEE MORE</button>
+    </div>
 </body>
-<script src="../js/main.js"></script>
+<script src="../js/main1.js">
+</script>
 
 </html>
